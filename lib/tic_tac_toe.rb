@@ -106,5 +106,11 @@ def over?(board)
 end
 
 def winner(board)
-
+  if (won?(board))
+    if combo.include?("X")
+      return "X"
+    elsif combo.include?("O")
+      return "O"
+    end
+  end
 end
